@@ -1,0 +1,13 @@
+server:
+  port: 8084
+
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/db_transaction?createDatabaseIfNotExist=true&useSSL=false&serverTimezone=UTC
+
+feign:
+  client:
+    config:
+      default:
+        connect-timeout: 5000
+        read-timeout: 5000

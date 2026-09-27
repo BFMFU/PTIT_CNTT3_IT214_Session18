@@ -1,0 +1,15 @@
+server:
+  port: 8083
+
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/db_account?createDatabaseIfNotExist=true&useSSL=false&serverTimezone=UTC
+  cache:
+    type: redis
+
+feign:
+  client:
+    config:
+      default:
+        connect-timeout: 5000
+        read-timeout: 5000
